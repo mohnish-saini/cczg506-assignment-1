@@ -1,0 +1,24 @@
+Execution excerpt covering successful data and training flows. Browser capture diagnostics are omitted.
+
+Server ready
+10:33:37.821 | INFO    | Flow run 'beautiful-peacock' - Beginning flow run 'beautiful-peacock' for flow 'fraud-data-pipeline'
+10:33:37.826 | INFO    | Flow run 'beautiful-peacock' - View at http://127.0.0.1:4200/runs/flow-run/805a2ae0-b802-4663-a73d-aea6e0443212
+10:33:38.880 | INFO    | Task run 'ingest-5ed' - INGEST rows=284807 columns=31 missing=0
+10:33:38.882 | INFO    | Task run 'ingest-5ed' - Finished in state Completed()
+10:33:40.983 | INFO    | Task run 'prepare-a1f' - PREPROCESS duplicates=1081 split=198608/85118 induced_NaNs=8511; label unchanged
+10:33:40.986 | INFO    | Task run 'prepare-a1f' - Finished in state Completed()
+10:33:43.151 | INFO    | Task run 'explore-102' - EDA correlations, binning, one-hot encoding and 3 chart files saved; NaNs after imputation=0
+10:33:43.153 | INFO    | Task run 'explore-102' - Finished in state Completed()
+10:33:43.904 | INFO    | Flow run 'beautiful-peacock' - Finished in state Completed()
+10:33:43.963 | INFO    | Flow run 'nickel-tiger' - Beginning flow run 'nickel-tiger' for flow 'fraud-training-pipeline'
+10:33:43.964 | INFO    | Flow run 'nickel-tiger' - View at http://127.0.0.1:4200/runs/flow-run/d68ed50d-5008-4cc8-a050-de506de56151
+10:33:45.192 | INFO    | Task run 'ingest-eb6' - INGEST rows=284807 columns=31 missing=0
+10:33:45.194 | INFO    | Task run 'ingest-eb6' - Finished in state Completed()
+10:33:47.036 | INFO    | Task run 'prepare-c3e' - PREPROCESS duplicates=1081 split=198608/85118 induced_NaNs=8511; label unchanged
+10:33:47.039 | INFO    | Task run 'prepare-c3e' - Finished in state Completed()
+10:33:48.503 | INFO    | Task run 'train_models-1e3' - MODEL LogisticRegression {"accuracy": 0.9731784111468784, "precision": 0.05265357292101964, "recall": 0.8873239436619719, "f1": 0.09940828402366864, "average_precision": 0.6851472088078517, "roc_auc": 0.9658130066882182, "fit_seconds": 1.2457209400000693, "threshold": 0.5, "confusion_matrix": [[82709, 2267], [16, 126]]}
+10:34:27.054 | INFO    | Task run 'train_models-1e3' - MODEL RandomForest {"accuracy": 0.9994830705608685, "precision": 0.9298245614035088, "recall": 0.7464788732394366, "f1": 0.828125, "average_precision": 0.8186195423563245, "roc_auc": 0.937918055073048, "fit_seconds": 38.37167964799994, "threshold": 0.5, "confusion_matrix": [[84968, 8], [36, 106]]}
+10:34:27.422 | INFO    | Task run 'train_models-1e3' - Finished in state Completed()
+10:34:27.973 | INFO    | Flow run 'nickel-tiger' - Finished in state Completed()
+Training complete
+API evidence saved

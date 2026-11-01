@@ -1,0 +1,79 @@
+{
+  "evaluated_utc": "2026-11-01T10:34:27.068886+00:00",
+  "models": {
+    "LogisticRegression": {
+      "accuracy": 0.9731784111468784,
+      "precision": 0.05265357292101964,
+      "recall": 0.8873239436619719,
+      "f1": 0.09940828402366864,
+      "average_precision": 0.6851472088078517,
+      "roc_auc": 0.9658130066882182,
+      "fit_seconds": 1.2457209400000693,
+      "threshold": 0.5,
+      "confusion_matrix": [
+        [
+          82709,
+          2267
+        ],
+        [
+          16,
+          126
+        ]
+      ]
+    },
+    "RandomForest": {
+      "accuracy": 0.9994830705608685,
+      "precision": 0.9298245614035088,
+      "recall": 0.7464788732394366,
+      "f1": 0.828125,
+      "average_precision": 0.8186195423563245,
+      "roc_auc": 0.937918055073048,
+      "fit_seconds": 38.37167964799994,
+      "threshold": 0.5,
+      "confusion_matrix": [
+        [
+          84968,
+          8
+        ],
+        [
+          36,
+          106
+        ]
+      ]
+    }
+  },
+  "deployment_candidate": "RandomForest",
+  "selection_policy": "RandomForest declared in advance; no test-based threshold optimization",
+  "features": [
+    "Time",
+    "V1",
+    "V2",
+    "V3",
+    "V4",
+    "V5",
+    "V6",
+    "V7",
+    "V8",
+    "V9",
+    "V10",
+    "V11",
+    "V12",
+    "V13",
+    "V14",
+    "V15",
+    "V16",
+    "V17",
+    "V18",
+    "V19",
+    "V20",
+    "V21",
+    "V22",
+    "V23",
+    "V24",
+    "V25",
+    "V26",
+    "V27",
+    "V28",
+    "Amount"
+  ]
+}

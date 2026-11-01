@@ -1,0 +1,9 @@
+{
+  "name": "Financial Fraud Detection API",
+  "version": "1.0.0",
+  "environment": "local demonstration",
+  "model": "RandomForest",
+  "flow": "fraud-data-pipeline",
+  "schedule_seconds": 120,
+  "threshold": 0.5
+}

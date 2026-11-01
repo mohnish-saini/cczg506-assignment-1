@@ -1,0 +1,10 @@
+prefect==3.9.1
+fastapi==0.150.0
+uvicorn==0.54.0
+scikit-learn==1.8.0
+pandas==2.2.3
+numpy==2.3.5
+matplotlib==3.10.8
+joblib==1.5.3
+tabulate==0.10.0
+socksio==1.0.0

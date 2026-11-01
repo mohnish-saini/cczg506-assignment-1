@@ -1,0 +1,7 @@
+{
+  "fraud_probability": 0.0,
+  "decision": "allow",
+  "threshold": 0.5,
+  "model": "RandomForest",
+  "latency_ms_including_model_load": 683.533
+}

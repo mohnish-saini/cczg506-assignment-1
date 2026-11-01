@@ -1,0 +1,28 @@
+Your flow 'fraud-data-pipeline' is being served and polling for scheduled runs!
+
+To trigger a run for this flow, use the following command:
+
+        $ prefect deployment run 'fraud-data-pipeline/fraud-data-every-2-minutes'
+
+You can also run your flow via the Prefect UI: http://127.0.0.1:4200/deployments/deployment/724f1366-aff6-41b4-94ea-d56ff5cf2f0c
+
+10:36:30.519 | INFO    | Flow run 'annoying-kiwi' - Beginning flow run 'annoying-kiwi' for flow 'fraud-data-pipeline'
+10:36:30.526 | INFO    | Flow run 'annoying-kiwi' - View at http://127.0.0.1:4200/runs/flow-run/01a196ac-d04a-7b29-9480-5c69c1f4f82d
+10:36:31.668 | INFO    | Task run 'ingest-8e3' - INGEST rows=284807 columns=31 missing=0
+10:36:31.671 | INFO    | Task run 'ingest-8e3' - Finished in state Completed()
+10:36:33.487 | INFO    | Task run 'prepare-6ec' - PREPROCESS duplicates=1081 split=198608/85118 induced_NaNs=8511; label unchanged
+10:36:33.490 | INFO    | Task run 'prepare-6ec' - Finished in state Completed()
+10:36:35.536 | INFO    | Task run 'explore-7bf' - EDA correlations, binning, one-hot encoding and 3 chart files saved; NaNs after imputation=0
+10:36:35.539 | INFO    | Task run 'explore-7bf' - Finished in state Completed()
+10:36:35.558 | INFO    | Flow run 'annoying-kiwi' - REFERENCE MODEL METRICS {"LogisticRegression": {"accuracy": 0.9731784111468784, "precision": 0.05265357292101964, "recall": 0.8873239436619719, "f1": 0.09940828402366864, "average_precision": 0.6851472088078517, "roc_auc": 0.9658130066882182, "fit_seconds": 1.2457209400000693, "threshold": 0.5, "confusion_matrix": [[82709, 2267], [16, 126]]}, "RandomForest": {"accuracy": 0.9994830705608685, "precision": 0.9298245614035088, "recall": 0.7464788732394366, "f1": 0.828125, "average_precision": 0.8186195423563245, "roc_auc": 0.937918055073048, "fit_seconds": 38.37167964799994, "threshold": 0.5, "confusion_matrix": [[84968, 8], [36, 106]]}}
+10:36:36.728 | INFO    | Flow run 'annoying-kiwi' - Finished in state Completed()
+10:38:30.248 | INFO    | Flow run 'rapid-ermine' - Beginning flow run 'rapid-ermine' for flow 'fraud-data-pipeline'
+10:38:30.255 | INFO    | Flow run 'rapid-ermine' - View at http://127.0.0.1:4200/runs/flow-run/01a196ac-d04a-7dac-a146-93e24ca2f5b9
+10:38:31.271 | INFO    | Task run 'ingest-31d' - INGEST rows=284807 columns=31 missing=0
+10:38:31.274 | INFO    | Task run 'ingest-31d' - Finished in state Completed()
+10:38:33.154 | INFO    | Task run 'prepare-2f0' - PREPROCESS duplicates=1081 split=198608/85118 induced_NaNs=8511; label unchanged
+10:38:33.157 | INFO    | Task run 'prepare-2f0' - Finished in state Completed()
+10:38:35.264 | INFO    | Task run 'explore-356' - EDA correlations, binning, one-hot encoding and 3 chart files saved; NaNs after imputation=0
+10:38:35.267 | INFO    | Task run 'explore-356' - Finished in state Completed()
+10:38:35.288 | INFO    | Flow run 'rapid-ermine' - REFERENCE MODEL METRICS {"LogisticRegression": {"accuracy": 0.9731784111468784, "precision": 0.05265357292101964, "recall": 0.8873239436619719, "f1": 0.09940828402366864, "average_precision": 0.6851472088078517, "roc_auc": 0.9658130066882182, "fit_seconds": 1.2457209400000693, "threshold": 0.5, "confusion_matrix": [[82709, 2267], [16, 126]]}, "RandomForest": {"accuracy": 0.9994830705608685, "precision": 0.9298245614035088, "recall": 0.7464788732394366, "f1": 0.828125, "average_precision": 0.8186195423563245, "roc_auc": 0.937918055073048, "fit_seconds": 38.37167964799994, "threshold": 0.5, "confusion_matrix": [[84968, 8], [36, 106]]}}
+10:38:36.354 | INFO    | Flow run 'rapid-ermine' - Finished in state Completed()

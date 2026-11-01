@@ -1,0 +1,5 @@
+{"utc": "2026-11-01T10:38:58.752178+00:00", "fraud_probability": 0.0, "decision": "allow", "threshold": 0.5, "model": "RandomForest", "latency_ms_including_model_load": 683.533}
+{"utc": "2026-11-01T10:40:12.067409+00:00", "fraud_probability": 0.0, "decision": "allow", "threshold": 0.5, "model": "RandomForest", "latency_ms_including_model_load": 656.479}
+{"utc": "2026-11-01T10:41:02.220315+00:00", "fraud_probability": 0.0, "decision": "allow", "threshold": 0.5, "model": "RandomForest", "latency_ms_including_model_load": 660.803}
+{"utc": "2026-11-01T10:41:58.187367+00:00", "fraud_probability": 0.0, "decision": "allow", "threshold": 0.5, "model": "RandomForest", "latency_ms_including_model_load": 713.933}
+{"utc": "2026-11-01T10:43:09.511987+00:00", "fraud_probability": 0.0, "decision": "allow", "threshold": 0.5, "model": "RandomForest", "latency_ms_including_model_load": 692.12}

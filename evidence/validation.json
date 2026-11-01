@@ -1,0 +1,6 @@
+{
+  "http_status": 422,
+  "body": {
+    "detail": "Exactly the 30 documented features are required"
+  }
+}
